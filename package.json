@@ -1,16 +1,11 @@
 {
   "name": "sidebar",
   "module": "index.ts",
-  "type": "module",
+  "dependencies": {
+    "remixicon": "^4.2.0"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "css.gg": "^2.1.1",
-    "font-awesome": "^4.7.0",
-    "remixicon": "^4.2.0"
-  }
+  "type": "module"
 }
