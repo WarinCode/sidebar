@@ -27,7 +27,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: Poppins, "sans-serif";
-  background-image: url("../assets/imgs/bg.jpg");
+  background-image: url("../assets/imgs/bg2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -43,7 +43,7 @@ body {
   justify-content: stretch;
   align-items: center;
   height: max-content;
-  width: 400px !important;
+  width: 400px;
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 2.2rem;
@@ -225,7 +225,7 @@ body {
     height: 200px;
     background: var(--social-bg);
     border-radius: 2.2rem;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     ul {
       width: 100%;
       height: 100%;
@@ -286,25 +286,29 @@ body {
     border-radius: 2.2rem;
     margin-top: 5px;
     ul {
-      width: 100%;
+      width: inherit;
       padding: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       list-style-type: none;
       li {
+        flex-grow: 1;
         height: 100%;
-        width: 20%;
         i {
-          transition: color 200ms ease-in-out;
+          transition: color 200ms ease-in-out, background 200ms ease-in-out;
           display: block;
           cursor: pointer;
           color: var(--text-white-50);
           font-size: 22px;
           text-align: center;
+          border-radius: 7px;
+          padding-block: 5px;
         }
         &:hover i {
           color: white;
+          background-color: var(--shadow-img);
         }
       }
     }
@@ -344,7 +348,8 @@ body {
 }
 
 .sidebar#sidebarActive {
-  width: 140px !important;
+  width: 140px;
+  border-radius: 60px;
   header {
     .circle-group {
       display: flex;
@@ -393,7 +398,6 @@ body {
           align-items: center;
           i {
             margin: 0;
-            font-size: 24px;
           }
           h4 {
             display: none;
@@ -428,8 +432,6 @@ body {
             margin: 0;
             img {
               cursor: pointer;
-              height: 29px;
-              width: 29px;
               margin: auto;
             }
           }
@@ -437,7 +439,6 @@ body {
             display: none;
           }
           i {
-            font-size: 24px;
             transition: color 200ms ease-in-out;
           }
         }
@@ -454,13 +455,12 @@ body {
       justify-content: center;
       width: inherit;
       height: max-content;
-      padding: 20px;
+      padding: 20px 15px;
       li {
         width: inherit;
         margin-block: 7px;
         i {
           text-align: center;
-          font-size: 24px;
         }
       }
     }
